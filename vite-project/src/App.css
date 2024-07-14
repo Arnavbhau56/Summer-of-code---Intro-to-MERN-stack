@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.todo-container {
+  background-color: white;
+  padding: 20px 30px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button {
+  background-color: #4CAF50;
+  border-radius: 0 4px 4px 0;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
